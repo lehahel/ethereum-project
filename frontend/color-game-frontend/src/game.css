@@ -1,0 +1,52 @@
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 5px;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-cell {
+    width: 100%;
+    padding-bottom: 100%; /* Keep the cells square */
+    background-color: #fff;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.grid-cell:hover {
+    transform: scale(1.1);
+    background-color: #e0e0ff; /* Light blue color on hover */
+}
+
+/* Simple anime-style button */
+.button {
+    background-color: #ff4db8; /* Anime-style pink */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #ff80c1; /* Lighter pink on hover */
+    transform: translateY(-2px);
+}
+
+/* Add some flair with a background pattern or image */
+body {
+    background-color: #f4f4f4;
+    background-image: url('anime-background.jpg'); /* Replace with your background */
+    background-size: cover;
+    background-attachment: fixed;
+}
